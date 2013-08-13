@@ -27,8 +27,8 @@
 // Scaffolding
 // -------------------------
 
-@body-bg:               #fff;
-@text-color:            @gray-dark;
+@body-bg:               #11041F;
+@text-color:            @gray-lighter;
 
 // Links
 // -------------------------
@@ -54,7 +54,6 @@
 @headings-font-family:    @font-family-base;
 @headings-font-weight:    500;
 @headings-line-height:    1.1;
-
 
 // Components
 // -------------------------
@@ -88,11 +87,11 @@
 @table-condensed-cell-padding:       5px;
 
 @table-bg:                           transparent; // overall background-color
-@table-bg-accent:                    #f9f9f9; // for striping
-@table-bg-hover:                     #f5f5f5;
+@table-bg-accent:                    lighten(@body-bg, 10%); // for striping
+@table-bg-hover:                     lighten(@body-bg, 10%);
 @table-bg-active:                    @table-bg-hover;
 
-@table-border-color:                 #ddd; // table and cell border
+@table-border-color:                 lighten(@body-bg, 10%); // table and cell border
 
 
 // Buttons
@@ -169,7 +168,6 @@
 // COMPONENT VARIABLES
 // --------------------------------------------------
 
-
 // Z-index master list
 // -------------------------
 // Used for a bird's eye view of components dependent on the z-axis
@@ -223,8 +221,8 @@
 
 // Basics of a navbar
 @navbar-height:                    50px;
-@navbar-color:                     #777;
-@navbar-bg:                        #eee;
+@navbar-color:                     #AAA;
+@navbar-bg:                        lighten(@body-bg, 10%);
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
@@ -313,9 +311,9 @@
 // Pagination
 // -------------------------
 
-@pagination-bg:                        #fff;
-@pagination-border:                    #ddd;
-@pagination-active-bg:                 #f5f5f5;
+@pagination-bg:                        lighten(@body-bg, 10%);
+@pagination-border:                    #222;
+@pagination-active-bg:                 lighten(@body-bg, 18%);
 @pagination-active-color:              @gray-light;
 @pagination-disabled-color:            @gray-light;
 
@@ -401,7 +399,7 @@
 @modal-title-padding:         15px;
 @modal-title-line-height:     @line-height-base;
 
-@modal-content-bg:                             #fff;
+@modal-content-bg:                             @body-bg;
 @modal-content-border-color:                   rgba(0,0,0,.2);
 @modal-content-fallback-border-color:          #999;
 
@@ -462,11 +460,11 @@
 
 // Panels
 // -------------------------
-@panel-bg:                    #fff;
+@panel-bg:                    @body-bg;
 @panel-border:                #ddd;
 @panel-border-radius:         @border-radius-base;
-@panel-heading-bg:            #f5f5f5;
-@panel-footer-bg:             #f5f5f5;
+@panel-heading-bg:            lighten(@body-bg, 10%);
+@panel-footer-bg:             lighten(@body-bg, 10%);
 
 @panel-primary-text:          #fff;
 @panel-primary-border:        @brand-primary;
@@ -499,13 +497,11 @@
 
 // Wells
 // -------------------------
-@well-bg:                     #f5f5f5;
-
+@well-bg:                     lighten(@body-bg, 10%);
 
 // Accordion
 // -------------------------
-@accordion-border-color:      #e5e5e5;
-
+@accordion-border-color:      lighten(@body-bg, 10%);
 
 // Badges
 // -------------------------
@@ -523,7 +519,7 @@
 
 // Breadcrumbs
 // -------------------------
-@breadcrumb-bg:               #f5f5f5;
+@breadcrumb-bg:               lighten(@body-bg, 10%);
 @breadcrumb-color:            #ccc;
 @breadcrumb-active-color:     @gray-light;
 
@@ -553,10 +549,10 @@
 
 // Code
 // ------------------------
-@code-color:                  #c7254e;
-@code-bg:                     #f9f2f4;
+@code-color:                  lighten(@body-bg, 80%);
+@code-bg:                     lighten(@body-bg, 10%);
 
-@pre-bg:                      #f5f5f5;
+@pre-bg:                      rgba;
 @pre-border-color:            #ccc;
 
 // Type
@@ -576,7 +572,6 @@
 
 // Horizontal forms & lists
 @component-offset-horizontal: 180px;
-
 
 // Container sizes
 // --------------------------------------------------
