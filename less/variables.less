@@ -18,16 +18,16 @@
 // Brand colors
 // -------------------------
 
-@brand-primary:         #428bca;
-@brand-success:         #5cb85c;
-@brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
-@brand-info:            #5bc0de;
+@brand-primary:         desaturate(darken(#428bca, 5%), 5%);
+@brand-success:         desaturate(darken(#5cb85c, 5%), 5%);
+@brand-warning:         desaturate(darken(#f0ad4e, 5%), 5%);
+@brand-danger:          desaturate(darken(#d9534f, 5%), 5%);
+@brand-info:            desaturate(darken(#5bc0de, 5%), 5%);
 
 // Scaffolding
 // -------------------------
 
-@body-bg:               #11041F;
+@body-bg:               #110F13;
 @text-color:            @gray-lighter;
 
 // Links
@@ -87,11 +87,11 @@
 @table-condensed-cell-padding:       5px;
 
 @table-bg:                           transparent; // overall background-color
-@table-bg-accent:                    lighten(@body-bg, 10%); // for striping
-@table-bg-hover:                     lighten(@body-bg, 10%);
+@table-bg-accent:                    desaturate( lighten(@body-bg, 3%), 5% ); // for striping
+@table-bg-hover:                     desaturate( lighten(@body-bg, 5%), 5% );
 @table-bg-active:                    @table-bg-hover;
 
-@table-border-color:                 lighten(@body-bg, 10%); // table and cell border
+@table-border-color:                 desaturate( lighten(@body-bg, 5%), 5% ); // table and cell border
 
 
 // Buttons
@@ -222,7 +222,7 @@
 // Basics of a navbar
 @navbar-height:                    50px;
 @navbar-color:                     #AAA;
-@navbar-bg:                        lighten(@body-bg, 10%);
+@navbar-bg:                        desaturate( lighten(@body-bg, 5%), 5% );
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
@@ -250,8 +250,8 @@
 // Inverted navbar
 //
 // Reset inverted navbar basics
-@navbar-inverse-color:                      @gray-light;
-@navbar-inverse-bg:                         #222;
+@navbar-inverse-color:                      @gray-darker;
+@navbar-inverse-bg:                         desaturate( lighten(@body-bg, 30%), 10%);
 
 // Inverted navbar links
 @navbar-inverse-link-color:                 @gray-light;
@@ -311,7 +311,7 @@
 // Pagination
 // -------------------------
 
-@pagination-bg:                        lighten(@body-bg, 10%);
+@pagination-bg:                        desaturate( lighten(@body-bg, 5%), 5% );
 @pagination-border:                    #222;
 @pagination-active-bg:                 lighten(@body-bg, 18%);
 @pagination-active-color:              @gray-light;
@@ -463,8 +463,8 @@
 @panel-bg:                    @body-bg;
 @panel-border:                #ddd;
 @panel-border-radius:         @border-radius-base;
-@panel-heading-bg:            lighten(@body-bg, 10%);
-@panel-footer-bg:             lighten(@body-bg, 10%);
+@panel-heading-bg:            desaturate( lighten(@body-bg, 5%), 5% );
+@panel-footer-bg:             desaturate( lighten(@body-bg, 5%), 5% );
 
 @panel-primary-text:          #fff;
 @panel-primary-border:        @brand-primary;
@@ -497,11 +497,11 @@
 
 // Wells
 // -------------------------
-@well-bg:                     lighten(@body-bg, 10%);
+@well-bg:                     desaturate( lighten(@body-bg, 5%), 5% );
 
 // Accordion
 // -------------------------
-@accordion-border-color:      lighten(@body-bg, 10%);
+@accordion-border-color:      desaturate( lighten(@body-bg, 5%), 5% );
 
 // Badges
 // -------------------------
@@ -519,7 +519,7 @@
 
 // Breadcrumbs
 // -------------------------
-@breadcrumb-bg:               lighten(@body-bg, 10%);
+@breadcrumb-bg:               desaturate( lighten(@body-bg, 5%), 5% );
 @breadcrumb-color:            #ccc;
 @breadcrumb-active-color:     @gray-light;
 
@@ -550,7 +550,7 @@
 // Code
 // ------------------------
 @code-color:                  lighten(@body-bg, 80%);
-@code-bg:                     lighten(@body-bg, 10%);
+@code-bg:                     desaturate( lighten(@body-bg, 5%), 5% );
 
 @pre-bg:                      rgba;
 @pre-border-color:            #ccc;
